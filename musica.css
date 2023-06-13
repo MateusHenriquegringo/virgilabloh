@@ -39,25 +39,20 @@ nav button {
     justify-content: center;
     background-color: white;
 }
-
-img {
-    max-width: 1800px;
-}
 header {
     display: flex;
     align-items: center;
     height: 90vh;
-    background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('./images/zt6wJNVyMScfHq4AFbSZV.jpg');
+    background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('https://data2.nssmag.com/images/galleries/22859/abloh-playlist-nss-magazine.jpg');
     background-repeat: no-repeat;
     background-position: right;
 }
 header h1 {
-    font-size: 100px;
+    font-size: 80px;
     font-weight:bold;
     width: 50%;
     padding: 100px;
 }
-
 main {
     display: flex;
     flex-direction: column;
@@ -74,7 +69,7 @@ main h1 {
 
 section h2 {
     font-weight: normal;
-    font-size: 40px;
+    font-size: 28px;
 }
 section p {
     font-size: 20px;
@@ -92,17 +87,19 @@ section {
 section img{
     max-width: 100%
 }
-article{
+section article figure img{
+    max-width: 100%;
+}
+section article img {
+    max-width: 50%;
+}
+figure {
+    width: 100%;
+}
+article {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-}
-.vert article {
-    display: flex;
-    flex-direction: column;
-}
-.side img {
-    width: 50%;
+    justify-content: space-between;
 }
 footer {
     background-color: rgba(0, 0, 0, 0.875);
