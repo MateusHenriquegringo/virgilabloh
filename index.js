@@ -8,7 +8,7 @@ window.addEventListener("scroll", function(){
 
 //DARK MODE
 let body = document.getElementById('body')
-let alterarTema = document.getElementById('toggle-mode')
+let alterarTema = document.getElementById('chk')
 const darkModeStorage = localStorage.getItem('gmtDarkMode')
 
 if(darkModeStorage){
