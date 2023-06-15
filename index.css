@@ -5,22 +5,35 @@
 	font-size: 100%;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
+
 }
 body {
     width: 100%;
+    transition: 0.3s;
 }
-nav {
-    font-size: 22px;
+#top {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
+    transition:.4s;
 }
+#top.scrolled {
+    font-size: 16px;
+    padding: 5px 40px;
+}
+
 nav a {
     color: black;
     text-decoration: none;
 }
-nav li :hover {
+nav li a:hover {
     color: black;
     border-bottom: 2px solid black;
 }
@@ -29,27 +42,29 @@ nav ul {
     list-style: none;
     justify-content: space-evenly;
     width:100%;
+    flex: 1;
 }
-
-nav button {
-    width: 60px;
-    box-sizing: border-box;
-    margin-left: 200px;
+nav div {
     display: flex;
     justify-content: center;
+}
+nav div button, nav li button {
+    cursor: pointer;
     background-color: white;
 }
-
-img {
-    max-width: 1800px;
+#top img,
+#top div {
+  flex: 0 0 15%;
 }
+
 header {
     display: flex;
     align-items: center;
-    height: 90vh;
+    height: 100vh;
     background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('./images/zt6wJNVyMScfHq4AFbSZV.jpg');
     background-repeat: no-repeat;
     background-position: right;
+    transition: 0.3s;
 }
 header h1 {
     font-size: 100px;
@@ -105,7 +120,7 @@ article{
     width: 50%;
 }
 footer {
-    background-color: rgba(0, 0, 0, 0.875);
+    background-color: #1f1f1f;
     padding: 40px;
 }
 footer ul a {
@@ -114,3 +129,16 @@ footer ul a {
 footer ul a:hover{
     color: rgb(175, 168, 168);
 }
+
+/*DARK MODE*/
+.dark-mode#body {
+    transition: 0.3s;
+    color: white;
+    background-color: #1a1a1a;
+}
+.dark-mode header {
+    transition: 0.3s;
+    background-image: linear-gradient(to left, rgba(40, 40, 40, 0) 40%, #1a1a1a 70%), url('./images/zt6wJNVyMScfHq4AFbSZV.jpg')
+}
+
+  

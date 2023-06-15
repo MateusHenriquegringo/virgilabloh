@@ -6,21 +6,33 @@
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
 }
+
 body {
     width: 100%;
+    transition: 0.3s;
 }
-nav {
-    font-size: 22px;
+#top {
+    background-color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    box-sizing: border-box;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
+    padding: 40px;
+    transition:.4s;
+}
+#top.scrolled {
+    font-size: 16px;
+    padding: 5px 40px;
 }
 nav a {
     color: black;
     text-decoration: none;
 }
-nav li :hover {
+nav li a:hover {
     color: black;
     border-bottom: 2px solid black;
 }
@@ -30,22 +42,26 @@ nav ul {
     justify-content: space-evenly;
     width:100%;
 }
-
-nav button {
-    width: 60px;
-    box-sizing: border-box;
-    margin-left: 200px;
+nav div {
     display: flex;
     justify-content: center;
+}
+nav div button, nav li button {
+    cursor: pointer;
     background-color: white;
+}
+#top img,
+#top div {
+  flex: 0 0 15%;
 }
 header {
     display: flex;
     align-items: center;
-    height: 90vh;
-    background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('https://data2.nssmag.com/images/galleries/22859/abloh-playlist-nss-magazine.jpg');
+    height: 100vh;
+    background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg');
     background-repeat: no-repeat;
     background-position: right;
+    transition: 0.3s;
 }
 header h1 {
     font-size: 80px;
@@ -87,12 +103,6 @@ section {
 section img{
     max-width: 100%
 }
-section article figure img{
-    max-width: 100%;
-}
-section article img {
-    max-width: 50%;
-}
 figure {
     width: 100%;
 }
@@ -110,4 +120,14 @@ footer ul a {
 }
 footer ul a:hover{
     color: rgb(175, 168, 168);
+}
+/*DARK MODE*/
+.dark-mode#body {
+    transition: 0.3s;
+    color: white;
+    background-color: #1a1a1a;
+}
+.dark-mode header {
+    transition: 0.3s;
+    background-image: linear-gradient(to left, rgba(40, 40, 40, 0) 40%, #1a1a1a 70%), url('https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg')
 }
