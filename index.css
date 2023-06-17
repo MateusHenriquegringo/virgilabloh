@@ -3,7 +3,7 @@ header {
     background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('./images/zt6wJNVyMScfHq4AFbSZV.jpg');
 }
 header h1 {
-    font-size: 100px;
+    font-size: 6rem;
 }
 
 section h2 {

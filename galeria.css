@@ -9,14 +9,13 @@ main #conteiner {
     font-weight: normal;
 }
 main #conteiner span {
-    transition: 0.3s;
-    background-color:white;
-    border: 2px solid #1a1a1a;
+    background-color:transparent;
+    border: 1px solid #1a1a1a;
     padding: 10px 20px;
     border-radius: 100px;
 }
 main #conteiner span:hover{
-    padding: 10px 30px;
+    cursor:pointer
 }
 main h1 {
     margin: 0;
@@ -26,62 +25,68 @@ header {
     background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('https://elephant.art/wp-content/uploads/2019/07/VirgilAbloh_20190607_0107.jpg')
 }
 header h1 {
-    font-size: 80px;
+    font-size: 5rem;
 }
-#artwork-content {
+#artwork-content,
+#exhibition-content,
+#architecture-content,
+#design-content {
     display: flex;
-    flex-wrap: wrap;
     width: 90vw;
     gap: 5px;
     justify-content:space-evenly;
 }
 
-#artwork-content .column{
+#artwork-content .column,
+#exhibition-content .column,
+#architecture-content .column,
+#design-content .column{
     flex: 1;
     min-width: 400px;
 }
 .column-content .more-images {
-    transition: 0.3s;
     background-color: transparent;
     padding: 3px 8px;
     border: 2px solid #1a1a1a;
     border-radius: 100px;
+    width: fit-content;
+    cursor: pointer;
+    margin: 10px 0;
 }
 .column-content img{
     width: 100%;
 }
+
 .column-content {
-    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    border-top: 1px solid black;
     padding: 10px 5px;
 }
+
 .hide {
     display: none;
-    
 }
+.hide .column{
+    display: none;
+}
+
 .show {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .dark-mode header {
     background-image: linear-gradient(to left, rgba(40, 40, 40, 0) 40%, #1a1a1a 70%), url('https://elephant.art/wp-content/uploads/2019/07/VirgilAbloh_20190607_0107.jpg')
 }
-.dark-mode #conteiner span,
- .dark-mode.more-images,
- #artwork-content.column-content {
+.dark-mode #artwork-content .column-content,
+.dark-mode #exhibition-content .column-content,
+.dark-mode #architecture-content .column-content,
+.dark-mode #design-content .column-content   {
     background-color:transparent;
+    border-top: 1px solid white;
+}
+.dark-mode #conteiner span,
+.dark-mode .more-images {
     border: 1px solid white;
 }

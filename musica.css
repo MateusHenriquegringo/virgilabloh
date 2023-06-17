@@ -3,7 +3,7 @@ header {
     background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg');
 }
 header h1 {
-    font-size: 80px;
+    font-size: 5rem;
 }
 section h2 {
     font-size: 28px;
