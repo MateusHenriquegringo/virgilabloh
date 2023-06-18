@@ -30,7 +30,8 @@ header h1 {
 #artwork-content,
 #exhibition-content,
 #architecture-content,
-#design-content {
+#design-content,
+#fashion-content {
     display: flex;
     width: 90vw;
     gap: 5px;
@@ -40,14 +41,15 @@ header h1 {
 #artwork-content .column,
 #exhibition-content .column,
 #architecture-content .column,
-#design-content .column{
+#design-content .column,
+#fashion-content .column{
     flex: 1;
     min-width: 400px;
 }
 .column-content .more-images {
     background-color: transparent;
     padding: 3px 8px;
-    border: 2px solid #1a1a1a;
+    border: 1px solid #1a1a1a;
     border-radius: 100px;
     width: fit-content;
     cursor: pointer;
@@ -82,7 +84,8 @@ header h1 {
 .dark-mode #artwork-content .column-content,
 .dark-mode #exhibition-content .column-content,
 .dark-mode #architecture-content .column-content,
-.dark-mode #design-content .column-content   {
+.dark-mode #design-content .column-content,
+.dark-mode #fashion-content .column-content{
     background-color:transparent;
     border-top: 1px solid white;
 }

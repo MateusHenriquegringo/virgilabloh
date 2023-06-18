@@ -115,6 +115,11 @@ main h1 {
     font-weight: bold;
     font-size: 40px;
 }
+#top ul li a{
+    border: 2px solid #1a1a1a;
+    padding: 0.5em 2em;
+    border-radius: 100px;
+}
 section h2 {
     font-weight: normal;
 }
@@ -154,6 +159,14 @@ footer ul a:hover{
     color: white;
     background-color: #1a1a1a;
 }
-.dark-mode header {
-    transition: 0.3s;
+.dark-mode #top {
+    background-color: #1a1a1a;
+}
+.dark-mode #top img {
+    filter: invert();
+    mix-blend-mode: color-dodge;
+}
+.dark-mode #top a {
+    border-color: white;
+    color: currentColor;
 }
