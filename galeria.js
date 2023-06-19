@@ -24,7 +24,7 @@ for (let i = 0; i<spans.length; i++){
 let contents = ids.map(elemento => elemento + '-content');
 console.log(contents)
 
-spans.forEach((span,index) => {
+spans.forEach((span,index) => { // o segundo parametro indica a posição do elemento na lista
   span.addEventListener('click', () => {
     for(let i = 0; i<contents.length; i++){
       document.getElementById(contents[i]).classList.add('hide');

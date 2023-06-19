@@ -1,5 +1,7 @@
 
 header {
+    background-size: cover;
+    background-position: center;
     background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg');
 }
 header h1 {

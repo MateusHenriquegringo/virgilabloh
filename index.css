@@ -1,5 +1,7 @@
 
 header {
+    background-position: center;
+    background-size: cover;
     background-image: linear-gradient(to left, rgba(61, 61, 54, 0) 40%, rgb(255, 255, 255) 70%), url('./images/zt6wJNVyMScfHq4AFbSZV.jpg');
 }
 header h1 {

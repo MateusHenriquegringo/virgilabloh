@@ -2,7 +2,10 @@ window.addEventListener("scroll", function(){
     let top = document.getElementById('top')
     top.classList.toggle('scrolled',window.scrollY > 200)
 })
-
+window.addEventListener("scroll", function(){
+    let responsive = document.getElementById('responsive')
+    responsive.classList.toggle('scrolled',window.scrollY > 200)
+})
 
 
 
@@ -23,5 +26,7 @@ alterarTema.addEventListener("click",function(){
     }
     localStorage.removeItem('gmtDarkMode')
 })
+
+
 
 

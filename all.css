@@ -5,7 +5,6 @@
 	font-size: 100%;
     font-family: 'Roboto', sans-serif;
     scroll-behavior: smooth;
-
 }
 .checkbox {
   opacity: 0;
@@ -96,7 +95,6 @@ header {
     height: 100vh;
     background-repeat: no-repeat;
     background-position: right;
-    transition: 0.3s;
 }
 header h1 {
     font-weight:bold;
@@ -143,6 +141,9 @@ article {
     display: flex;
     justify-content: space-between;
 }
+nav.hide {
+    display: none;
+}
 footer {
     background-color: #1f1f1f;
     padding: 40px;
@@ -152,6 +153,12 @@ footer ul a {
 }
 footer ul a:hover{
     color: rgb(175, 168, 168);
+}
+.hide {
+    display: none;
+}
+#responsive .label {
+    display: none;
 }
 /*DARK MODE*/
 .dark-mode#body {
@@ -170,3 +177,4 @@ footer ul a:hover{
     border-color: white;
     color: currentColor;
 }
+
