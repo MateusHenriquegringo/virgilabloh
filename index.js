@@ -27,6 +27,21 @@ alterarTema.addEventListener("click",function(){
     localStorage.removeItem('gmtDarkMode')
 })
 
+let sections = Array.from(document.getElementsByTagName('section')).map((element) => {
+    element.classList.add('hidden');
+    return element;
+})
 
-
-
+const observer = new IntersectionObserver(entries=> {
+    Array.from(entries).forEach( entry => {
+        if(entry.intersectionRatio >= .2){
+            entry.target.classList.add('hidden-off')
+        }
+    })
+},{
+    threshold: .2
+})
+ 
+sections.forEach(element => {
+    observer.observe(element)
+})

@@ -14,15 +14,9 @@ moreImagesList.forEach(function(moreImages) {
   });
 });
 
-let spans = document.querySelectorAll('#conteiner span')
-let ids = []
-for (let i = 0; i<spans.length; i++){
-  let id = spans[i].getAttribute('id')
-  ids.push(id)
-}
+let spans = Array.from(document.querySelectorAll('#conteiner span'));
+let contents = spans.map(element => element.getAttribute('id') + '-content');
 
-let contents = ids.map(elemento => elemento + '-content');
-console.log(contents)
 
 spans.forEach((span,index) => { // o segundo parametro indica a posição do elemento na lista
   span.addEventListener('click', () => {

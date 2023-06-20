@@ -157,6 +157,14 @@ footer ul a:hover{
 .hide {
     display: none;
 }
+.hidden{
+    opacity: 0;
+    transition: opacity .5s linear;
+}
+.hidden-off {
+    opacity: 1;
+}
+
 #responsive .label {
     display: none;
 }
