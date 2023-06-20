@@ -1,28 +1,23 @@
+const moreImagesList = document.querySelectorAll(".more-images");
 
-let moreImagesList = document.querySelectorAll('.more-images')
-moreImagesList.forEach(function(moreImages) {
-  moreImages.addEventListener('click', function() {
-    let hideDiv = this.nextElementSibling;
-    let isVisible = hideDiv.classList.contains('show');
-    if (isVisible) {
-      hideDiv.classList.remove('show');
-      this.textContent = 'Mais Imagens';
-    } else {
-      hideDiv.classList.add('show');
-      this.textContent = 'Menos Imagens';
-    }
+moreImagesList.forEach((moreImages) => {
+  moreImages.addEventListener("click", () => {
+    const hideDiv = moreImages.nextElementSibling;
+    const isVisible = hideDiv.classList.contains("show");
+
+    hideDiv.classList.toggle("show");
+    moreImages.textContent = isVisible ? "Mais Imagens" : "Menos Imagens";
   });
 });
 
-let spans = Array.from(document.querySelectorAll('#conteiner span'));
-let contents = spans.map(element => element.getAttribute('id') + '-content');
+let spans = Array.from(document.querySelectorAll("#conteiner span"));
+let contents = spans.map((element) => element.getAttribute("id") + "-content");
 
-
-spans.forEach((span,index) => { // o segundo parametro indica a posição do elemento na lista
-  span.addEventListener('click', () => {
-    for(let i = 0; i<contents.length; i++){
-      document.getElementById(contents[i]).classList.add('hide');
-    }
-    document.getElementById(contents[index]).classList.remove('hide');
+spans.forEach((span, index) => {
+  span.addEventListener("click", () => {
+    contents.forEach((contentId) => {
+      document.getElementById(contentId).classList.add("hide");
+    });
+    document.getElementById(contents[index]).classList.remove("hide");
   });
 });

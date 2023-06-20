@@ -1,57 +1,56 @@
 @media only screen and (max-width: 680px) {
-    article {
-        flex-wrap: wrap;
-    }
-    section {
-        width: 80vw;
-    }
-    section iframe {
-        height: 40vh;
-    }
-    #top{
-        display: none;
-    }
-    header h1{
-        font-size:3em;
-        padding: 10px;
-        width: 100vw;
-        color: white;
-    }
-    header {
-        background-size:cover;  
-        background-position: center 10%; 
-        background-image:url('https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg');
-    }
-    .dark-mode header{
-        background-image: url('https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg');
-    }
-    #responsive{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center;
-        gap: 20px;
-        position: fixed;
-        width: 100%;
-        transition:.4s;
-        padding: 20px 0;
-    }
-    #responsive.scrolled {
-        padding: 0;
-        gap: 2px;
-    }
-    .scrolled ul {
-        display: none;
-    }
-    #responsive div {
-        display: flex;
-        align-items: center;
-        justify-content:center;
-    }
-    #responsive div .label{
-        display: block;
-        transform: scale(0.8);
-    }
+  article {
+    flex-wrap: wrap;
   }
-  
+  section {
+    width: 80vw;
+  }
+  section iframe {
+    height: 40vh;
+  }
+  #top {
+    display: none;
+  }
+  header h1 {
+    font-size: 3em;
+    padding: 10px;
+    width: 100vw;
+    color: white;
+  }
+  header {
+    background-size: cover;
+    background-position: center 10%;
+    background-image: url("https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg");
+  }
+  .dark-mode header {
+    background-image: url("https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg");
+  }
+  #responsive {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+    padding: 20px 0;
+  }
+  #responsive.scrolled {
+    padding: 0;
+    gap: 2px;
+  }
+  .scrolled ul {
+    display: none;
+  }
+  #responsive div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #responsive div .label {
+    display: block;
+    transform: scale(0.8);
+  }
+}

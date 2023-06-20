@@ -1,76 +1,73 @@
 @media only screen and (max-width: 680px) {
-    article {
-        flex-wrap: wrap;
-    }
-    section {
-        width: 80vw;
-    }
-    section iframe {
-        height: 40vh;
-    }
-    #top{
-        display: none;
-    }
-    header h1{
-        font-size:2.5em;
-        padding: 10px;
-        width: 100vw;
-        color: black;
-    }
-    header {
-        background-size:cover;  
-        background-position: center 10%; 
-        background-image:url('https://elephant.art/wp-content/uploads/2019/07/VirgilAbloh_20190607_0107.jpg');
-    }
-    .dark-mode header{
-        background-image: url('https://elephant.art/wp-content/uploads/2019/07/VirgilAbloh_20190607_0107.jpg');
-    }
-    #responsive{
-        background-color: white;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content:center;
-        gap: 20px;
-        position: fixed;
-        width: 100%;
-        transition:.4s;
-        padding: 20px 0;
-    }
-    #responsive.scrolled {
-        padding: 0;
-        gap: 2px;
-    }
-    .scrolled ul {
-        display: none;
-    }
-    #responsive div {
-        display: flex;
-        align-items: center;
-        justify-content:center;
-    }
-    #responsive div .label{
-        display: block;
-        transform: scale(0.8);
-    }
-    main #conteiner {
-        width: 100vw;
-        margin-top: 0;
-    }
-    #artwork-content,
-    #exhibition-content,
-    #architecture-content,
-    #design-content,
-    #fashion-content {
-        flex-wrap: wrap;
-        
-    }
-    iframe{
-        width: 100%;
-    }
-    .column > h1 {
-        padding:20px;
-    }
-    
+  article {
+    flex-wrap: wrap;
   }
-
+  section {
+    width: 80vw;
+  }
+  section iframe {
+    height: 40vh;
+  }
+  #top {
+    display: none;
+  }
+  header h1 {
+    font-size: 2.5em;
+    padding: 10px;
+    width: 100vw;
+    color: black;
+  }
+  header {
+    background-size: cover;
+    background-position: center 10%;
+    background-image: url("https://elephant.art/wp-content/uploads/2019/07/VirgilAbloh_20190607_0107.jpg");
+  }
+  .dark-mode header {
+    background-image: url("https://elephant.art/wp-content/uploads/2019/07/VirgilAbloh_20190607_0107.jpg");
+  }
+  #responsive {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    position: fixed;
+    width: 100%;
+    transition: 0.4s;
+    padding: 20px 0;
+  }
+  #responsive.scrolled {
+    padding: 0;
+    gap: 2px;
+  }
+  .scrolled ul {
+    display: none;
+  }
+  #responsive div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #responsive div .label {
+    display: block;
+    transform: scale(0.8);
+  }
+  main #conteiner {
+    width: 100vw;
+    margin-top: 0;
+  }
+  #artwork-content,
+  #exhibition-content,
+  #architecture-content,
+  #design-content,
+  #fashion-content {
+    flex-wrap: wrap;
+  }
+  iframe {
+    width: 100%;
+  }
+  .column > h1 {
+    padding: 20px;
+  }
+}

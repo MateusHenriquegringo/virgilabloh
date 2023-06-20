@@ -1,10 +1,10 @@
 * {
-    margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-    font-family: 'Roboto', sans-serif;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  scroll-behavior: smooth;
 }
 .checkbox {
   opacity: 0;
@@ -22,7 +22,6 @@
   height: 26px;
   width: 50px;
   transform: scale(1.1);
-
 }
 .label .ball {
   background-color: #fff;
@@ -41,148 +40,148 @@
 }
 
 body {
-    width: 100%;
-    transition: 0.3s;
+  width: 100%;
+  transition: 0.3s;
 }
 #top {
-    background-color: white;
-    position: fixed;
-    top: 0;
-    left: 0;
-    box-sizing: border-box;
-    width: 100vw;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 40px;
-    transition:.4s;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px;
+  transition: 0.4s;
 }
 #top.scrolled {
-    font-size: 16px;
-    padding: 5px 40px;
+  font-size: 16px;
+  padding: 5px 40px;
 }
 
 nav a {
-    color: black;
-    text-decoration: none;
+  color: black;
+  text-decoration: none;
 }
 nav li a:hover {
-    color: black;
-    border-bottom: 2px solid black;
+  color: black;
+  border-bottom: 2px solid black;
 }
 nav ul {
-    display: flex;
-    list-style: none;
-    justify-content: space-evenly;
-    width:100%;
-    flex: 1;
+  display: flex;
+  list-style: none;
+  justify-content: space-evenly;
+  width: 100%;
+  flex: 1;
 }
 nav div {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
-nav div button, nav li button {
-    cursor: pointer;
-    background-color: white;
+nav div button,
+nav li button {
+  cursor: pointer;
+  background-color: white;
 }
 #top img,
 #top div {
   flex: 0 0 15%;
 }
 header {
-    display: flex;
-    align-items: center;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-position: right;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: right;
 }
 header h1 {
-    font-weight:bold;
-    width: 50%;
-    padding: 100px;
+  font-weight: bold;
+  width: 50%;
+  padding: 100px;
 }
 main {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
 }
 main h1 {
-    margin-top: 8vh;
-    margin-bottom: 6vh;
-    font-weight: bold;
-    font-size: 40px;
+  margin-top: 8vh;
+  margin-bottom: 6vh;
+  font-weight: bold;
+  font-size: 40px;
 }
-#top ul li a{
-    border: 2px solid #1a1a1a;
-    padding: 0.5em 2em;
-    border-radius: 100px;
+#top ul li a {
+  border: 2px solid #1a1a1a;
+  padding: 0.5em 2em;
+  border-radius: 100px;
 }
 section h2 {
-    font-weight: normal;
+  font-weight: normal;
 }
 section p {
-    font-size: 20px;
-    font-weight: lighter;
+  font-size: 20px;
+  font-weight: lighter;
 }
 section {
-    margin-bottom: 10vh;
-    width: 65vw;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-    gap: 10px;
+  margin-bottom: 10vh;
+  width: 65vw;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
 }
-section img{
-    max-width: 100%
+section img {
+  max-width: 100%;
 }
 article {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 nav.hide {
-    display: none;
+  display: none;
 }
 footer {
-    background-color: #1f1f1f;
-    padding: 40px;
+  background-color: #1f1f1f;
+  padding: 40px;
 }
 footer ul a {
-    color: white;
+  color: white;
 }
-footer ul a:hover{
-    color: rgb(175, 168, 168);
+footer ul a:hover {
+  color: rgb(175, 168, 168);
 }
 .hide {
-    display: none;
+  display: none;
 }
-.hidden{
-    opacity: 0;
-    transition: opacity .5s linear;
+.hidden {
+  opacity: 0;
+  transition: opacity 0.5s linear;
 }
 .hidden-off {
-    opacity: 1;
+  opacity: 1;
 }
 
 #responsive .label {
-    display: none;
+  display: none;
 }
 /*DARK MODE*/
 .dark-mode#body {
-    transition: 0.3s;
-    color: white;
-    background-color: #1a1a1a;
+  transition: 0.3s;
+  color: white;
+  background-color: #1a1a1a;
 }
 .dark-mode #top {
-    background-color: #1a1a1a;
+  background-color: #1a1a1a;
 }
 .dark-mode #top img {
-    filter: invert();
-    mix-blend-mode: color-dodge;
+  filter: invert();
+  mix-blend-mode: color-dodge;
 }
 .dark-mode #top a {
-    border-color: white;
-    color: currentColor;
+  border-color: white;
+  color: currentColor;
 }
-
