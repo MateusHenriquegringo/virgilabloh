@@ -1,10 +1,8 @@
 window.addEventListener("scroll", function () {
   let top = document.getElementById("top");
+let responsive = document.getElementById("responsive");
+  responsive.classList.toggle("scrolled", window.scrollY > 200)
   top.classList.toggle("scrolled", window.scrollY > 200);
-});
-window.addEventListener("scroll", function () {
-  let responsive = document.getElementById("responsive");
-  responsive.classList.toggle("scrolled", window.scrollY > 200);
 });
 
 //DARK MODE
