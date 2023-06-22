@@ -15,18 +15,15 @@
     font-size: 3em;
     padding: 10px;
     width: 100vw;
-    color: white;
+    color: #fff;
   }
   header {
     background-size: cover;
     background-position: center 10%;
-    background-image: url("https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg");
-  }
-  .dark-mode header {
-    background-image: url("https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg");
+    background-image: url(https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg);
   }
   #responsive {
-    background-color: white;
+    background-color: #fff;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -36,13 +33,6 @@
     width: 100%;
     transition: 0.4s;
     padding: 20px 0;
-  }
-  #responsive.scrolled {
-    padding: 0;
-    gap: 2px;
-  }
-  .scrolled ul {
-    display: none;
   }
   #responsive div {
     display: flex;
