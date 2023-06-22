@@ -21,3 +21,4 @@ spans.forEach((span, index) => {
     document.getElementById(contents[index]).classList.remove("hide");
   });
 });
+

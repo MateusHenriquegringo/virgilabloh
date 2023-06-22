@@ -48,3 +48,7 @@ const observer = new IntersectionObserver(
 sections.forEach((element) => {
   observer.observe(element);
 });
+let images = Array.from(document.querySelectorAll('main img'))
+images.forEach(image => {
+  image.setAttribute("draggable", "false")
+})
