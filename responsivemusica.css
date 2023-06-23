@@ -22,6 +22,13 @@
     background-position: center 10%;
     background-image: url(https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg);
   }
+  #responsive.scrolled {
+    padding: 0;
+    gap: 2px;
+  }
+  .scrolled ul {
+    display: none;
+  }
   #responsive {
     background-color: #fff;
     display: flex;

@@ -51,4 +51,11 @@
   .column > h1 {
     padding: 20px;
   }
+  #responsive.scrolled {
+    padding: 0;
+    gap: 2px;
+  }
+  .scrolled ul {
+    display: none;
+  }
 }
