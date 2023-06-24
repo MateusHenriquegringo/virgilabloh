@@ -49,4 +49,5 @@ sections.forEach((element) => {
 let images = Array.from(document.querySelectorAll('main img'))
 images.forEach(image => {
   image.setAttribute("draggable", "false")
+  image.setAttribute("loading", "lazy")
 })
