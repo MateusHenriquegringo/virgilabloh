@@ -53,4 +53,12 @@
     display: block;
     transform: scale(0.8);
   }
+  .dark-mode header {
+    background-image: linear-gradient(
+        to left,
+        rgba(40, 40, 40, 0) 20%,
+        #1a1a1a 100%
+      ),
+      url("./images/zt6wJNVyMScfHq4AFbSZV.jpg");
+  }
 }

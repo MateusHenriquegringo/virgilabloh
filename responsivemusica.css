@@ -50,4 +50,12 @@
     display: block;
     transform: scale(0.8);
   }
+  .dark-mode header {
+    background-image: linear-gradient(
+        to left,
+        rgba(40, 40, 40, 0) 40%,
+        #1a1a1a 100%
+      ),
+      url("https://images-prod.dazeddigital.com/1371/azure/dazed-prod/1310/8/1318943.jpg");
+  }
 }

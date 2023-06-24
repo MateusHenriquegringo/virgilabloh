@@ -58,4 +58,12 @@
   .scrolled ul {
     display: none;
   }
+  .dark-mode header {
+    background-image: linear-gradient(
+        to left,
+        rgba(40, 40, 40, 0) 40%,
+        #1a1a1a 100%
+      ),
+      url("https://elephant.art/wp-content/uploads/2019/07/VirgilAbloh_20190607_0107.jpg");
+  }
 }
